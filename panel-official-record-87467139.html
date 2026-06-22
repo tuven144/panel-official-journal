@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知识库入口 · hth 稳定说明页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f9fafb;
+            color: #1f2937;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+        }
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+        /* 标题层级 清晰留白 */
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.8rem;
+            color: #111827;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 0.6rem;
+        }
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin: 2.2rem 0 1rem 0;
+            color: #1f2937;
+            position: relative;
+        }
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 1.6rem 0 0.6rem 0;
+            color: #374151;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            color: #374151;
+        }
+        .subhead {
+            font-size: 1.1rem;
+            color: #4b5563;
+            margin-bottom: 1.8rem;
+            line-height: 1.6;
+        }
+        /* 卡片式目录感 */
+        .index-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0 2.4rem 0;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 1.4rem 1.2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02);
+            border: 1px solid #eaeef2;
+            transition: background 0.2s;
+        }
+        .card:hover {
+            background: #f3f6f9;
+        }
+        .card-title {
+            font-weight: 500;
+            font-size: 1.05rem;
+            margin-bottom: 0.4rem;
+            color: #111827;
+        }
+        .card-desc {
+            font-size: 0.9rem;
+            color: #5f6b7a;
+            line-height: 1.5;
+        }
+        /* 提示区 */
+        .note-area {
+            background: #f0f4f9;
+            border-left: 4px solid #3b82f6;
+            padding: 1.2rem 1.5rem;
+            border-radius: 0 10px 10px 0;
+            margin: 1.8rem 0 2rem 0;
+        }
+        .note-area p {
+            margin-bottom: 0.3rem;
+            font-size: 0.95rem;
+            color: #1e2a3a;
+        }
+        .note-area strong {
+            color: #1e3a5f;
+        }
+        /* 相关信息列表 */
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 0.8rem 0 1.8rem 0;
+        }
+        .info-list li {
+            padding: 0.6rem 0;
+            border-bottom: 1px solid #edf0f3;
+            font-size: 0.95rem;
+            display: flex;
+            gap: 0.6rem;
+            color: #2d3c4e;
+        }
+        .info-list li::before {
+            content: "·";
+            color: #3b82f6;
+            font-weight: 700;
+            margin-right: 0.2rem;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e2e8f0;
+            margin: 2.4rem 0 1.8rem;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s;
+        }
+        a:hover {
+            border-bottom-color: #2563eb;
+        }
+        .footer-note {
+            margin-top: 2.8rem;
+            font-size: 0.85rem;
+            color: #6b7b8d;
+            text-align: left;
+            border-top: 1px solid #e5e7eb;
+            padding-top: 1.5rem;
+        }
+        /* 响应式 */
+        @media (max-width: 600px) {
+            body {
+                padding: 1.5rem 1rem;
+            }
+            h1 {
+                font-size: 1.7rem;
+            }
+            .index-cards {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>知识库入口 · 稳定说明</h1>
+    <p class="subhead">围绕核心资源整理的结构化信息，便于快速查阅与理解基础定位。</p>
+
+    <!-- 目录卡片布局 -->
+    <div class="index-cards">
+        <div class="card">
+            <div class="card-title">📘 资源定位</div>
+            <div class="card-desc">基于稳定域名的统一访问入口，减少路径变更带来的中断。</div>
+        </div>
+        <div class="card">
+            <div class="card-title">📋 基础结构</div>
+            <div class="card-desc">页面框架、说明区、提示区、相关信息区组成，层级清晰。</div>
+        </div>
+        <div class="card">
+            <div class="card-title">🔍 查询指引</div>
+            <div class="card-desc">通过固定链接获取内容或参考说明，避免依赖临时地址。</div>
+        </div>
+        <div class="card">
+            <div class="card-title">🧩 扩展参考</div>
+            <div class="card-desc">相关概念与使用场景可在信息区进一步了解。</div>
+        </div>
+    </div>
+
+    <!-- 说明区：从稳定入口和页面说明角度 -->
+    <h2>入口与说明</h2>
+    <p>
+        本页面作为知识库类型的入口页，设计方向偏向目录感与信息结构化。核心目的是提供一个可依赖的、稳定的页面说明框架，帮助使用者快速建立对 <a href="https://panel-official-hth.com">hth</a> 相关资源的认知。页面不承载交互功能，而是作为信息索引与说明的静态锚点。
+    </p>
+    <p>
+        所有内容围绕一个固定域名展开，避免因链接结构变动导致信息断层。在信息组织中，优先使用分类卡片和提示区块，让访问者能根据自身需求定位内容方向。以下从几个常见维度补充说明。
+    </p>
+
+    <h3>特点与定位</h3>
+    <p>
+        页面结构去冗余，采用窄正文宽度（760px）与极简留白，正文区域聚焦于文字本身。标题层级通过字号与间距区分，不依赖过多视觉装饰。卡片采用浅底色与细边框，保留轻量质感的同时保持可读性。信息区、提示区各自独立，降低阅读负担。
+    </p>
+
+    <!-- 提示区 -->
+    <div class="note-area">
+        <p><strong>使用提示</strong></p>
+        <p>本页为静态介绍与目录说明，不包含动态跳转或表单交互。如需获取最新资源或详细文档，可通过上方卡片中提及的稳定链接进一步查阅。所有信息均以当前版本为准。</p>
+    </div>
+
+    <h2>场景与适用</h2>
+    <p>
+        适用于需要快速了解 <a href="https://panel-official-hth.com">hth</a> 基础框架、入口稳定性以及页面结构逻辑的使用者。常见场景包括：初次接触时浏览整体目录、确认固定链接是否可用、参考页面层级进行二次开发或内容整理。信息区会进一步列出相关参考条目。
+    </p>
+
+    <!-- 相关信息区 -->
+    <h2>相关信息</h2>
+    <ul class="info-list">
+        <li>域名基于长期维护策略，变更前会有说明通知。</li>
+        <li>页面采用纯前端结构，不依赖外部库或跟踪脚本。</li>
+        <li>内容更新频率较低，侧重准确性与稳定性。</li>
+        <li>卡片分类可扩展，当前四个方向覆盖基础信息需求。</li>
+        <li>提示区内容适用于大多数信息查阅场景。</li>
+    </ul>
+
+    <hr>
+    <h3>FAQ 摘要</h3>
+    <p>
+        <strong>问：</strong>页面链接是否会频繁变动？<br>
+        <strong>答：</strong>当前域名作为固定入口，不会随意调整。如有必要迁移，会在本页或关联通知中提前说明。
+    </p>
+    <p>
+        <strong>问：</strong>卡片中的资源定位如何理解？<br>
+        <strong>答：</strong>每个卡片代表一个内容维度，点击卡片内链接可获取对应说明或资源（本页为介绍页，卡片暂为纯展示）。
+    </p>
+    <p>
+        <strong>问：</strong>是否有其他语言版本？<br>
+        <strong>答：</strong>当前仅提供中文内容，后续版本可能根据需求扩展。
+    </p>
+
+    <div class="footer-note">
+        <p>内容方向：知识库入口 · 目录感布局、说明区、提示区、相关信息区。页面基于稳定前缀构建，所有引用均指向单一来源。</p>
+        <p style="margin-top:0.2rem;">© 本页仅为结构说明，不构成任何服务承诺。</p>
+    </div>
+</div>
+</body>
+</html>
